@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Article Highlighter & YouTube Watch Timer",
+  "version": "1.0.3",
+  "description": "Article highlights and Shorts / YouTube video watch time (visible tabs).",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Shorts / YouTube videos & highlights"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*",
+        "https://m.youtube.com/*",
+        "https://youtu.be/*"
+      ],
+      "js": ["shorts-content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
