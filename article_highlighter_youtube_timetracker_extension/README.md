@@ -87,5 +87,5 @@ On the extensions page, click **Reload** on this extension’s card so changes a
 
 See `manifest.json` → `version` (currently **1.0.3**).
 
-# Youtube link
+## Youtube link
 https://youtu.be/pdhgawLSON4 
