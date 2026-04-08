@@ -1,5 +1,11 @@
+/* global chrome */
 (function () {
   const STORAGE_KEY = "youtubeShortsStats";
+  const ext = globalThis.chrome;
+
+  if (!ext || !ext.storage || !ext.storage.local) {
+    return;
+  }
 
   function todayKey() {
     return new Date().toISOString().slice(0, 10);
@@ -49,34 +55,26 @@
   let storageChain = Promise.resolve();
 
   function enqueuePersist(mutator) {
-    storageChain = storageChain
-      .then(
-        () =>
-          new Promise((resolve, reject) => {
-            chrome.storage.local.get([STORAGE_KEY], (res) => {
-              if (chrome.runtime.lastError) {
-                reject(new Error(chrome.runtime.lastError.message));
-                return;
-              }
-              const stats = res[STORAGE_KEY] || {
-                totalSeconds: 0,
-                byDay: {},
-              };
-              mutator(stats);
-              stats.lastUpdated = Date.now();
-              chrome.storage.local.set({ [STORAGE_KEY]: stats }, () => {
-                if (chrome.runtime.lastError) {
-                  reject(new Error(chrome.runtime.lastError.message));
-                } else {
-                  resolve();
-                }
-              });
+    storageChain = storageChain.then(
+      () =>
+        new Promise((resolve) => {
+          ext.storage.local.get([STORAGE_KEY], (res) => {
+            if (ext.runtime && ext.runtime.lastError) {
+              resolve();
+              return;
+            }
+            const stats = res[STORAGE_KEY] || {
+              totalSeconds: 0,
+              byDay: {},
+            };
+            mutator(stats);
+            stats.lastUpdated = Date.now();
+            ext.storage.local.set({ [STORAGE_KEY]: stats }, () => {
+              resolve();
             });
-          })
-      )
-      .catch((e) => {
-        console.warn("[YT watch timer] storage:", e && e.message ? e.message : e);
-      });
+          });
+        })
+    );
   }
 
   function addOneSecond() {
