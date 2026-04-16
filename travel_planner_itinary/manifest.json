@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Travel Planner AI",
+  "version": "1.0",
+  "description": "Analyzes travel blogs and creates beautiful insights and itineraries.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Analyze Travel Blog"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        ".env"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

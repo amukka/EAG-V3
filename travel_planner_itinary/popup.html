@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Planner AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="header-bg"></div>
+      <div class="header-content">
+        <h1>🌍 Travel Planner</h1>
+        <p class="subtitle">AI-powered insights and itineraries</p>
+      </div>
+    </header>
+    
+    <main class="content">
+      <div id="initial-state" class="state-pane active">
+        <p class="helper-text">Ready to turn this blog into a beautiful travel plan?</p>
+        <button id="analyze-btn" class="primary-btn">
+          ✨ Analyze Travel Blog
+        </button>
+      </div>
+
+      <div id="loading-state" class="state-pane">
+        <div class="scanner-container">
+          <div class="scanner"></div>
+          <div class="scanner-line"></div>
+        </div>
+        <p>Gemini 3.1 Flash Lite is analyzing your trip...</p>
+      </div>
+
+      <div id="error-state" class="state-pane">
+        <div class="error-icon">⚠️</div>
+        <p id="error-message">Could not analyze the page.</p>
+        <button id="retry-btn" class="secondary-btn">Try Again</button>
+      </div>
+
+      <div id="result-state" class="state-pane">
+        <div class="card header-card">
+          <h2 id="destination-title">Destination</h2>
+          <div class="tags-container">
+            <div class="tag">
+              <span class="tag-icon">📅</span>
+              <span id="best-time-text" class="tag-text"></span>
+            </div>
+            <div class="tag cost-tag">
+              <span class="tag-icon">💰</span>
+              <span id="estimated-cost-text" class="tag-text"></span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-title">✨ Highlights</h3>
+        <ul id="highlights-list" class="highlights-list"></ul>
+
+        <h3 class="section-title">🗺️ Day-by-Day Itinerary</h3>
+        <div id="itinerary-container" class="itinerary"></div>
+      </div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
