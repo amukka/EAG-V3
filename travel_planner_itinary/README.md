@@ -4,6 +4,9 @@ Welcome to **Travel Planner AI**, a beautiful, completely local Google Chrome ex
 
 Powered by Google's massive **Gemini 3.1 Flash Lite Preview** model, this extension invisibly reads the travel blog you are currently viewing and generates actionable insights with a single click.
 
+## Video Walk Through Link
+- https://youtu.be/6ZvE-8d5JOY
+
 ## ✨ Features
 
 - **Instant Insights**: Extracts the destination and the best time to visit directly from the text.
