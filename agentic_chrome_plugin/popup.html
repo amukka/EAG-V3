@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic Product Advisor</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>Smart Purchase Advisor</h1>
+        <p>AI-powered product analysis</p>
+      </header>
+
+      <label for="query">Query</label>
+      <textarea
+        id="query"
+        rows="3"
+        placeholder="Should i by samsung or iphone?"
+      ></textarea>
+
+      <div class="actions">
+        <button id="runBtn">Analyze</button>
+      </div>
+
+      <div class="quick-actions">
+        <button id="analyzePageBtn" class="ghost">Analyze Current Page</button>
+        <button id="compareBtn" class="ghost">Compare Alternatives</button>
+      </div>
+
+      <section class="panel">
+        <h2>Agent Reasoning Chain</h2>
+        <div id="trace" class="trace timeline"></div>
+      </section>
+
+      <section class="panel recommendation">
+        <h2>Final Recommendation</h2>
+        <div id="finalAnswer" class="final-answer"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Reasoning Summary</h2>
+        <ol id="reasoningChain" class="reasoning-chain"></ol>
+      </section>
+
+      <section class="panel">
+        <h2>Raw Final JSON</h2>
+        <pre id="final" class="final"></pre>
+      </section>
+
+      <div class="actions">
+        <button id="clearBtn" class="secondary">Clear</button>
+      </div>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

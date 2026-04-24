@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Agentic Product Advisor",
+  "version": "1.0.0",
+  "description": "Chrome agentic plugin with LLM -> tool -> LLM loop visualization.",
+  "action": {
+    "default_title": "Agentic Product Advisor",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "http://127.0.0.1:5000/*"
+  ]
+}
