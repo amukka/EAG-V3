@@ -1,4 +1,4 @@
-# 🇮🇷 Iran War News Collector — MCP + Agent System
+# 🇮ran War News Collector — MCP + Agent System
 
 ## 📌 Overview
 
@@ -79,7 +79,7 @@ Query → LLM → Tool Call → Tool Result → LLM → Next Action → Final An
 ### 1. Create Virtual Environment
 
 ```bash
-cd c:\SchoolOfAI\session4_mcp_basics
+cd <dir>
 "C:\Program Files\Python311\python.exe" -m venv venv
 venv\Scripts\activate
 
@@ -91,3 +91,75 @@ pip install "fastmcp[apps]" fastmcp prefab-ui requests mcp google-genai python-d
 Create a .env file:
 GEMINI_API_KEY=your_api_key_here
 
+🔧 1. Setup (First Time Only)
+
+cd <dir>
+
+# Create virtual environment
+python -m venv venv
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Install dependencies
+pip install fastmcp "fastmcp[apps]" prefab-ui requests mcp google-genai python-dotenv
+
+🖥️ 2. Terminal 1 — Start the UI Server
+
+venv\Scripts\activate
+fastmcp dev apps facts_server.py
+
+🌐 Open in browser:
+
+http://localhost:8080
+
+What this does:
+
+Starts MCP server
+Launches Prefab UI
+Exposes tools like:
+fetch_fact
+save_fact
+show_iran_war_headlines
+
+🤖 3. Terminal 2 — Run the Agent
+
+venv\Scripts\activate
+python facts_agent.py
+
+What happens:
+
+    Agent connects to MCP server
+    Calls tools step-by-step:
+    Fetch headlines
+    Save each headline
+    Show UI
+
+🧾 4. View the UI
+
+http://localhost:8080
+
+Then:
+
+    Select show_iran_war_headlines
+    Click Launch
+
+## 🎯 Key Features
+
+### ✅ MCP Server
+- ✅ Tool registration
+- ✅ Tool execution
+- ✅ App registration
+- ✅ UI hosting
+
+### ✅ Agent
+- ✅ Tool calling
+- ✅ Step-by-step execution
+- ✅ Logging
+- ✅ Gemini integration
+
+### ✅ UI
+- ✅ Card layout
+- ✅ Badge styling
+- ✅ Interactive buttons
+- ✅ Real-time updates
