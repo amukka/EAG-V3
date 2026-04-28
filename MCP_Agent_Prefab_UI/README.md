@@ -1,4 +1,4 @@
-# 🇮ran War News Collector — MCP + Agent System
+# Iran War News Collector — MCP + Agent System
 
 ## 📌 Overview
 
