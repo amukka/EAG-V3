@@ -71,6 +71,8 @@ fetch_news → save_fact × 4 → show_iran_war_headlines → FINAL_ANSWER
 ### Execution Pattern
 Query → LLM → Tool Call → Tool Result → LLM → Next Action → Final Answer
 
+### Youtube Link
+https://youtu.be/UoqKhpjVD2A
 
 ---
 
