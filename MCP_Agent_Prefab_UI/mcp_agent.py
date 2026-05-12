@@ -76,14 +76,12 @@ def extract_action(text: str) -> str:
 async def main():
     server_params = StdioServerParameters(
         command=sys.executable,
-        args=[str(Path(__file__).parent / "facts_server.py")],
+        args=[str(Path(__file__).parent / "mcp_server.py")],
     )
 
     async with stdio_client(server_params) as (read, write):
         async with ClientSession(read, write) as session:
             await session.initialize()
-
-            print("✅ Connected to MCP facts_server\n")
 
             tools = (await session.list_tools()).tools
             tools_desc = describe_tools(tools)
@@ -178,7 +176,8 @@ What is your next action?
                 parts = [p.strip() for p in call.split("|")]
 
                 func_name = parts[0]
-                raw_args = parts[1:]
+                raw_args = [p for p in parts[1:] if p != ""]
+                # raw_args = parts[1:]
 
                 tool = next((t for t in tools if t.name == func_name), None)
 
