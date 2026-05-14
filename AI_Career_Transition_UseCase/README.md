@@ -2,7 +2,7 @@
 
 An AI agent that builds a personalized, week-by-week learning plan to transition from any current role into a target tech career.
 
-Powered by **Gemini 2.0 Flash** with:
+Powered by **gemini-2.5-flash-lite** with:
 - Native function calling
 - MCP (Model Context Protocol)
 - Structured multi-step reasoning
@@ -572,7 +572,7 @@ This makes logic:
 
 # Tech Stack
 
-- Gemini 2.0 Flash
+- gemini-2.5-flash-lite
 - MCP (Model Context Protocol)
 - Streamlit
 - Pydantic
@@ -585,3 +585,4 @@ This makes logic:
 # License
 
 MIT License
+
