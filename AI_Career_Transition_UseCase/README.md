@@ -27,6 +27,9 @@ Powered by **gemini-2.5-flash-lite** with:
 
 ---
 
+# Youtube Link
+https://youtu.be/mU9VeeppTrU
+
 # Architecture
 
 ```text
