@@ -1,0 +1,65 @@
+# pyproject.toml
+[project]
+name = "Agenic_Architecture_Basic"
+version = "0.1.0"
+description = "Four-role cognitive agent architecture with MCP tools, Gemini gateway, memory, perception, decision, and action loops"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+{ name = "Aswani Keerthi" }
+]
+dependencies = [
+    "fastapi>=0.116.0",
+    "uvicorn>=0.35.0",
+    "httpx>=0.28.0",
+    "python-dotenv>=1.1.0",
+    "pydantic>=2.11.0",
+    "mcp>=1.12.0",
+    "tavily-python>=0.7.0",
+    "ddgs>=9.5.0",
+    "duckduckgo-search>=8.1.1",
+    "google-generativeai>=0.8.6",
+    "openai>=2.37.0",
+    "anthropic>=0.102.0",
+]
+
+[project.optional-dependencies]
+dev = [
+"pytest>=8.4.0",
+"ruff>=0.12.0",
+"mypy>=1.17.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+"E",
+"F",
+"I",
+"UP",
+"B",
+]
+ignore = [
+"E501",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = false
