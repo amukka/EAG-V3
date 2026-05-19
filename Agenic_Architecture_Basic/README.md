@@ -268,3 +268,4 @@ python validate_prompts.py
 
 
 ## Youtube Video Link:
+https://www.youtube.com/watch?v=HJSyMvW1lQM
