@@ -1,0 +1,13 @@
+mcp[cli]
+httpx
+pydantic
+python-dotenv
+faiss-cpu
+numpy
+ddgs
+tavily-python
+crawl4ai
+flask
+flask-cors
+pytest
+pytest-asyncio
