@@ -1,0 +1,201 @@
+FILE	sandbox/papers/attention.md	urls=86	kept=15
+SKIP	rule	https://arxiv.org/IgnoreMe
+SKIP	rule	https://arxiv.org/list/cs.CL/2017-06
+SKIP	rule	https://arxiv.org/list/cs.CL/new
+SKIP	rule	https://arxiv.org/list/cs.CL/recent
+SKIP	rule	https://arxiv.org/list/cs/recent
+SKIP	rule	https://arxiv.org/login
+SKIP	rule	https://arxiv.org/prevnext?id=1706.03762&function=next&context=cs.CL
+SKIP	rule	https://arxiv.org/prevnext?id=1706.03762&function=prev&context=cs.CL
+SKIP	rule	https://arxiv.org/show-email/f53b7360/1706.03762
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logomark-small-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/bibsonomy.png
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/reddit.png
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Ashish%20Vaswani
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Jakob%20Uszkoreit
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Llion%20Jones
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Niki%20Parmar
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Noam%20Shazeer
+SKIP	rule	https://reddit.com/submit?url=https://arxiv.org/abs/1706.03762&title=Attention%20Is%20All%20You%20Need
+SKIP	rule	https://status.arxiv.org
+OK	41129	https://arxiv.org/html/1706.03762v7	attention__arxiv.org__html_1706.03762v7__290d0199d3.txt
+OK	4517	https://arxiv.org/abs/1706.03762v7	attention__arxiv.org__abs_1706.03762v7__d37d04df09.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762v7	attention__arxiv.org__abs_1706.03762v7__d37d04df09__abstract.txt
+OK	4547	https://arxiv.org/abs/1706.03762v6	attention__arxiv.org__abs_1706.03762v6__bba8b42410.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762v6	attention__arxiv.org__abs_1706.03762v6__bba8b42410__abstract.txt
+OK	4549	https://arxiv.org/abs/1706.03762v5	attention__arxiv.org__abs_1706.03762v5__d6dbea8d8b.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762v5	attention__arxiv.org__abs_1706.03762v5__d6dbea8d8b__abstract.txt
+OK	4618	https://arxiv.org/abs/1706.03762v4	attention__arxiv.org__abs_1706.03762v4__ca1074faa7.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762v4	attention__arxiv.org__abs_1706.03762v4__ca1074faa7__abstract.txt
+OK	4549	https://arxiv.org/abs/1706.03762v3	attention__arxiv.org__abs_1706.03762v3__d4cf57e304.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762v3	attention__arxiv.org__abs_1706.03762v3__d4cf57e304__abstract.txt
+OK	4549	https://arxiv.org/abs/1706.03762v2	attention__arxiv.org__abs_1706.03762v2__8609cfe2f1.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762v2	attention__arxiv.org__abs_1706.03762v2__8609cfe2f1__abstract.txt
+OK	4585	https://arxiv.org/abs/1706.03762v1	attention__arxiv.org__abs_1706.03762v1__53b2cdf784.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762v1	attention__arxiv.org__abs_1706.03762v1__53b2cdf784__abstract.txt
+OK	4515	https://arxiv.org/abs/1706.03762	attention__arxiv.org__abs_1706.03762__32b9d4c781.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762	attention__arxiv.org__abs_1706.03762__32b9d4c781__abstract.txt
+SKIP	duplicate_content	https://arxiv.org/abs/1706.03762#content	matched=attention__arxiv.org__abs_1706.03762__32b9d4c781.txt
+OK	4583	https://arxiv.org/abs/1706.03762?context=cs	attention__arxiv.org__abs_1706.03762__q_context_cs__5cc482cd8f.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762?context=cs	attention__arxiv.org__abs_1706.03762__q_context_cs__5cc482cd8f__abstract.txt
+OK	4515	https://arxiv.org/abs/1706.03762?context=cs.LG	attention__arxiv.org__abs_1706.03762__q_context_cs.LG__86181a372e.txt
+OK_ABSTRACT	1136	https://arxiv.org/abs/1706.03762?context=cs.LG	attention__arxiv.org__abs_1706.03762__q_context_cs.LG__86181a372e__abstract.txt
+SKIP	too_short(129)	http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/1706.03762&description=Attention%20Is%20All%20You%20Need
+SKIP	fail_status(202)	https://api.semanticscholar.org/arXiv:1706.03762
+SKIP	duplicate_content	https://doi.org/10.48550/arXiv.1706.03762	matched=attention__arxiv.org__abs_1706.03762__32b9d4c781.txt
+FILE	sandbox/papers/cot.md	urls=86	kept=13
+SKIP	rule	https://arxiv.org/IgnoreMe
+SKIP	rule	https://arxiv.org/list/cs.CL/2022-01
+SKIP	rule	https://arxiv.org/list/cs.CL/new
+SKIP	rule	https://arxiv.org/list/cs.CL/recent
+SKIP	rule	https://arxiv.org/list/cs/recent
+SKIP	rule	https://arxiv.org/login
+SKIP	rule	https://arxiv.org/prevnext?id=2201.11903&function=next&context=cs.CL
+SKIP	rule	https://arxiv.org/prevnext?id=2201.11903&function=prev&context=cs.CL
+SKIP	rule	https://arxiv.org/show-email/9f27af3f/2201.11903
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logomark-small-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/bibsonomy.png
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/reddit.png
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Dale%20Schuurmans
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Denny%20Zhou
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Jason%20Wei
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Quoc%20Le
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Xuezhi%20Wang
+SKIP	rule	https://reddit.com/submit?url=https://arxiv.org/abs/2201.11903&title=Chain-of-Thought%20Prompting%20Elicits%20Reasoning%20in%20Large%20Language%20Models
+SKIP	rule	https://status.arxiv.org
+OK	4217	https://arxiv.org/abs/2201.11903v6	cot__arxiv.org__abs_2201.11903v6__b6341f5973.txt
+OK_ABSTRACT	863	https://arxiv.org/abs/2201.11903v6	cot__arxiv.org__abs_2201.11903v6__b6341f5973__abstract.txt
+OK	4247	https://arxiv.org/abs/2201.11903v5	cot__arxiv.org__abs_2201.11903v5__0795bed7ac.txt
+OK_ABSTRACT	863	https://arxiv.org/abs/2201.11903v5	cot__arxiv.org__abs_2201.11903v5__0795bed7ac__abstract.txt
+OK	4247	https://arxiv.org/abs/2201.11903v4	cot__arxiv.org__abs_2201.11903v4__5770f68e31.txt
+OK_ABSTRACT	863	https://arxiv.org/abs/2201.11903v4	cot__arxiv.org__abs_2201.11903v4__5770f68e31__abstract.txt
+OK	4246	https://arxiv.org/abs/2201.11903v3	cot__arxiv.org__abs_2201.11903v3__6c889a4cbe.txt
+OK_ABSTRACT	863	https://arxiv.org/abs/2201.11903v3	cot__arxiv.org__abs_2201.11903v3__6c889a4cbe__abstract.txt
+OK	4160	https://arxiv.org/abs/2201.11903v2	cot__arxiv.org__abs_2201.11903v2__37c7333bce.txt
+OK_ABSTRACT	802	https://arxiv.org/abs/2201.11903v2	cot__arxiv.org__abs_2201.11903v2__37c7333bce__abstract.txt
+OK	4034	https://arxiv.org/abs/2201.11903v1	cot__arxiv.org__abs_2201.11903v1__092716fd26.txt
+OK_ABSTRACT	639	https://arxiv.org/abs/2201.11903v1	cot__arxiv.org__abs_2201.11903v1__092716fd26__abstract.txt
+OK	4283	https://arxiv.org/abs/2201.11903	cot__arxiv.org__abs_2201.11903__5bd403a2f3.txt
+OK_ABSTRACT	863	https://arxiv.org/abs/2201.11903	cot__arxiv.org__abs_2201.11903__5bd403a2f3__abstract.txt
+SKIP	duplicate_content	https://arxiv.org/abs/2201.11903#content	matched=cot__arxiv.org__abs_2201.11903__5bd403a2f3.txt
+OK	4215	https://arxiv.org/abs/2201.11903?context=cs	cot__arxiv.org__abs_2201.11903__q_context_cs__75b928c835.txt
+OK_ABSTRACT	863	https://arxiv.org/abs/2201.11903?context=cs	cot__arxiv.org__abs_2201.11903__q_context_cs__75b928c835__abstract.txt
+OK	4215	https://arxiv.org/abs/2201.11903?context=cs.AI	cot__arxiv.org__abs_2201.11903__q_context_cs.AI__ff3ad30006.txt
+OK_ABSTRACT	863	https://arxiv.org/abs/2201.11903?context=cs.AI	cot__arxiv.org__abs_2201.11903__q_context_cs.AI__ff3ad30006__abstract.txt
+SKIP	too_short(129)	http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/2201.11903&description=Chain-of-Thought%20Prompting%20Elicits%20Reasoning%20in%20Large%20Language%20Models
+SKIP	fail_status(202)	https://api.semanticscholar.org/arXiv:2201.11903
+SKIP	duplicate_content	https://doi.org/10.48550/arXiv.2201.11903	matched=cot__arxiv.org__abs_2201.11903__5bd403a2f3.txt
+FILE	sandbox/papers/dpo.md	urls=75	kept=12
+SKIP	rule	https://arxiv.org/IgnoreMe
+SKIP	rule	https://arxiv.org/list/cs.LG/2023-05
+SKIP	rule	https://arxiv.org/list/cs.LG/new
+SKIP	rule	https://arxiv.org/list/cs.LG/recent
+SKIP	rule	https://arxiv.org/list/cs/recent
+SKIP	rule	https://arxiv.org/login
+SKIP	rule	https://arxiv.org/prevnext?id=2305.18290&function=next&context=cs.LG
+SKIP	rule	https://arxiv.org/prevnext?id=2305.18290&function=prev&context=cs.LG
+SKIP	rule	https://arxiv.org/show-email/8595333e/2305.18290
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logomark-small-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/bibsonomy.png
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/reddit.png
+SKIP	rule	https://reddit.com/submit?url=https://arxiv.org/abs/2305.18290&title=Direct%20Preference%20Optimization:%20Your%20Language%20Model%20is%20Secretly%20a%20Reward%20Model
+SKIP	rule	https://status.arxiv.org
+OK	108381	https://arxiv.org/html/2305.18290v3	dpo__arxiv.org__html_2305.18290v3__5f1b1d05e0.txt
+OK	4891	https://arxiv.org/abs/2305.18290v3	dpo__arxiv.org__abs_2305.18290v3__914d52b7ca.txt
+OK_ABSTRACT	1604	https://arxiv.org/abs/2305.18290v3	dpo__arxiv.org__abs_2305.18290v3__914d52b7ca__abstract.txt
+OK	4989	https://arxiv.org/abs/2305.18290v2	dpo__arxiv.org__abs_2305.18290v2__53d67fee3e.txt
+OK_ABSTRACT	1604	https://arxiv.org/abs/2305.18290v2	dpo__arxiv.org__abs_2305.18290v2__53d67fee3e__abstract.txt
+OK	4930	https://arxiv.org/abs/2305.18290v1	dpo__arxiv.org__abs_2305.18290v1__80ccf77f0e.txt
+OK_ABSTRACT	1645	https://arxiv.org/abs/2305.18290v1	dpo__arxiv.org__abs_2305.18290v1__80ccf77f0e__abstract.txt
+OK	4957	https://arxiv.org/abs/2305.18290	dpo__arxiv.org__abs_2305.18290__0e8a4b3694.txt
+OK_ABSTRACT	1604	https://arxiv.org/abs/2305.18290	dpo__arxiv.org__abs_2305.18290__0e8a4b3694__abstract.txt
+SKIP	duplicate_content	https://arxiv.org/abs/2305.18290#content	matched=dpo__arxiv.org__abs_2305.18290__0e8a4b3694.txt
+OK	4889	https://arxiv.org/abs/2305.18290?context=cs	dpo__arxiv.org__abs_2305.18290__q_context_cs__b3c3b476e2.txt
+OK_ABSTRACT	1604	https://arxiv.org/abs/2305.18290?context=cs	dpo__arxiv.org__abs_2305.18290__q_context_cs__b3c3b476e2__abstract.txt
+OK	4889	https://arxiv.org/abs/2305.18290?context=cs.AI	dpo__arxiv.org__abs_2305.18290__q_context_cs.AI__800b758e13.txt
+OK_ABSTRACT	1604	https://arxiv.org/abs/2305.18290?context=cs.AI	dpo__arxiv.org__abs_2305.18290__q_context_cs.AI__800b758e13__abstract.txt
+OK	4889	https://arxiv.org/abs/2305.18290?context=cs.CL	dpo__arxiv.org__abs_2305.18290__q_context_cs.CL__4a11829d46.txt
+OK_ABSTRACT	1604	https://arxiv.org/abs/2305.18290?context=cs.CL	dpo__arxiv.org__abs_2305.18290__q_context_cs.CL__4a11829d46__abstract.txt
+SKIP	too_short(129)	http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/2305.18290&description=Direct%20Preference%20Optimization:%20Your%20Language%20Model%20is%20Secretly%20a%20Reward%20Model
+SKIP	fail_status(202)	https://api.semanticscholar.org/arXiv:2305.18290
+SKIP	duplicate_content	https://doi.org/10.48550/arXiv.2305.18290	matched=dpo__arxiv.org__abs_2305.18290__0e8a4b3694.txt
+FILE	sandbox/papers/lora.md	urls=83	kept=11
+SKIP	rule	https://arxiv.org/IgnoreMe
+SKIP	rule	https://arxiv.org/list/cs.CL/2021-06
+SKIP	rule	https://arxiv.org/list/cs.CL/new
+SKIP	rule	https://arxiv.org/list/cs.CL/recent
+SKIP	rule	https://arxiv.org/list/cs/recent
+SKIP	rule	https://arxiv.org/login
+SKIP	rule	https://arxiv.org/prevnext?id=2106.09685&function=next&context=cs.CL
+SKIP	rule	https://arxiv.org/prevnext?id=2106.09685&function=prev&context=cs.CL
+SKIP	rule	https://arxiv.org/show-email/e4479443/2106.09685
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logomark-small-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/bibsonomy.png
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/reddit.png
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Phillip%20Wallis
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Weizhu%20Chen
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Yelong%20Shen
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Yuanzhi%20Li
+SKIP	rule	https://dblp.uni-trier.de/search/author?author=Zeyuan%20Allen-Zhu
+SKIP	rule	https://reddit.com/submit?url=https://arxiv.org/abs/2106.09685&title=LoRA:%20Low-Rank%20Adaptation%20of%20Large%20Language%20Models
+SKIP	rule	https://status.arxiv.org
+OK	91559	https://arxiv.org/html/2106.09685v2	lora__arxiv.org__html_2106.09685v2__55a58f5f39.txt
+OK	4758	https://arxiv.org/abs/2106.09685v2	lora__arxiv.org__abs_2106.09685v2__c1407cdfa5.txt
+OK_ABSTRACT	1381	https://arxiv.org/abs/2106.09685v2	lora__arxiv.org__abs_2106.09685v2__c1407cdfa5__abstract.txt
+OK	4435	https://arxiv.org/abs/2106.09685v1	lora__arxiv.org__abs_2106.09685v1__d587d86e28.txt
+OK_ABSTRACT	1233	https://arxiv.org/abs/2106.09685v1	lora__arxiv.org__abs_2106.09685v1__d587d86e28__abstract.txt
+OK	4756	https://arxiv.org/abs/2106.09685	lora__arxiv.org__abs_2106.09685__7a22705a79.txt
+OK_ABSTRACT	1381	https://arxiv.org/abs/2106.09685	lora__arxiv.org__abs_2106.09685__7a22705a79__abstract.txt
+SKIP	duplicate_content	https://arxiv.org/abs/2106.09685#content	matched=lora__arxiv.org__abs_2106.09685__7a22705a79.txt
+OK	4688	https://arxiv.org/abs/2106.09685?context=cs	lora__arxiv.org__abs_2106.09685__q_context_cs__004d9dbe04.txt
+OK_ABSTRACT	1381	https://arxiv.org/abs/2106.09685?context=cs	lora__arxiv.org__abs_2106.09685__q_context_cs__004d9dbe04__abstract.txt
+OK	4688	https://arxiv.org/abs/2106.09685?context=cs.AI	lora__arxiv.org__abs_2106.09685__q_context_cs.AI__82b5341ffb.txt
+OK_ABSTRACT	1381	https://arxiv.org/abs/2106.09685?context=cs.AI	lora__arxiv.org__abs_2106.09685__q_context_cs.AI__82b5341ffb__abstract.txt
+OK	4688	https://arxiv.org/abs/2106.09685?context=cs.LG	lora__arxiv.org__abs_2106.09685__q_context_cs.LG__95481477d2.txt
+OK_ABSTRACT	1381	https://arxiv.org/abs/2106.09685?context=cs.LG	lora__arxiv.org__abs_2106.09685__q_context_cs.LG__95481477d2__abstract.txt
+SKIP	too_short(129)	http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/2106.09685&description=LoRA:%20Low-Rank%20Adaptation%20of%20Large%20Language%20Models
+SKIP	fail_status(202)	https://api.semanticscholar.org/arXiv:2106.09685
+SKIP	duplicate_content	https://doi.org/10.48550/arXiv.2106.09685	matched=lora__arxiv.org__abs_2106.09685__7a22705a79.txt
+FILE	sandbox/papers/react.md	urls=75	kept=11
+SKIP	rule	https://arxiv.org/IgnoreMe
+SKIP	rule	https://arxiv.org/list/cs.CL/2022-10
+SKIP	rule	https://arxiv.org/list/cs.CL/new
+SKIP	rule	https://arxiv.org/list/cs.CL/recent
+SKIP	rule	https://arxiv.org/list/cs/recent
+SKIP	rule	https://arxiv.org/login
+SKIP	rule	https://arxiv.org/prevnext?id=2210.03629&function=next&context=cs.CL
+SKIP	rule	https://arxiv.org/prevnext?id=2210.03629&function=prev&context=cs.CL
+SKIP	rule	https://arxiv.org/show-email/a500107c/2210.03629
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/arxiv-logomark-small-white.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/bibsonomy.png
+SKIP	rule	https://arxiv.org/static/browse/0.3.4/images/icons/social/reddit.png
+SKIP	rule	https://reddit.com/submit?url=https://arxiv.org/abs/2210.03629&title=ReAct:%20Synergizing%20Reasoning%20and%20Acting%20in%20Language%20Models
+SKIP	rule	https://status.arxiv.org
+OK	4833	https://arxiv.org/abs/2210.03629v3	react__arxiv.org__abs_2210.03629v3__4e001f4f6f.txt
+OK_ABSTRACT	1618	https://arxiv.org/abs/2210.03629v3	react__arxiv.org__abs_2210.03629v3__4e001f4f6f__abstract.txt
+OK	4816	https://arxiv.org/abs/2210.03629v2	react__arxiv.org__abs_2210.03629v2__c6038514bd.txt
+OK_ABSTRACT	1618	https://arxiv.org/abs/2210.03629v2	react__arxiv.org__abs_2210.03629v2__c6038514bd__abstract.txt
+OK	4684	https://arxiv.org/abs/2210.03629v1	react__arxiv.org__abs_2210.03629v1__0b6b3e79f9.txt
+OK_ABSTRACT	1579	https://arxiv.org/abs/2210.03629v1	react__arxiv.org__abs_2210.03629v1__0b6b3e79f9__abstract.txt
+OK	4899	https://arxiv.org/abs/2210.03629	react__arxiv.org__abs_2210.03629__0baffed4a7.txt
+OK_ABSTRACT	1618	https://arxiv.org/abs/2210.03629	react__arxiv.org__abs_2210.03629__0baffed4a7__abstract.txt
+SKIP	duplicate_content	https://arxiv.org/abs/2210.03629#content	matched=react__arxiv.org__abs_2210.03629__0baffed4a7.txt
+OK	4831	https://arxiv.org/abs/2210.03629?context=cs	react__arxiv.org__abs_2210.03629__q_context_cs__15dd737ff6.txt
+OK_ABSTRACT	1618	https://arxiv.org/abs/2210.03629?context=cs	react__arxiv.org__abs_2210.03629__q_context_cs__15dd737ff6__abstract.txt
+OK	4831	https://arxiv.org/abs/2210.03629?context=cs.AI	react__arxiv.org__abs_2210.03629__q_context_cs.AI__dfad0e1656.txt
+OK_ABSTRACT	1618	https://arxiv.org/abs/2210.03629?context=cs.AI	react__arxiv.org__abs_2210.03629__q_context_cs.AI__dfad0e1656__abstract.txt
+OK	4831	https://arxiv.org/abs/2210.03629?context=cs.LG	react__arxiv.org__abs_2210.03629__q_context_cs.LG__9bfebd5223.txt
+OK_ABSTRACT	1618	https://arxiv.org/abs/2210.03629?context=cs.LG	react__arxiv.org__abs_2210.03629__q_context_cs.LG__9bfebd5223__abstract.txt
+SKIP	too_short(129)	http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/2210.03629&description=ReAct:%20Synergizing%20Reasoning%20and%20Acting%20in%20Language%20Models
+SKIP	duplicate_content	https://api.semanticscholar.org/arXiv:2210.03629	matched=react__arxiv.org__abs_2210.03629__0baffed4a7.txt
+SKIP	duplicate_content	https://doi.org/10.48550/arXiv.2210.03629	matched=react__arxiv.org__abs_2210.03629__0baffed4a7.txt

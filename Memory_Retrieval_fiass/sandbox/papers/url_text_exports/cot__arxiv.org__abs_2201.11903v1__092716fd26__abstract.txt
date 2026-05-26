@@ -1,0 +1,6 @@
+SOURCE: https://arxiv.org/abs/2201.11903v1
+SOURCE_MD: sandbox/papers/cot.md
+
+Title: Chain of Thought Prompting Elicits Reasoning in Large Language Models
+
+Abstract: Although scaling up language model size has reliably improved performance on a range of NLP tasks, even the largest models currently struggle with certain reasoning tasks such as math word problems, symbolic manipulation, and commonsense reasoning. This paper explores the ability of language models to generate a coherent chain of thought -- a series of short sentences that mimic the reasoning process a person might have when responding to a question. Experiments show that inducing a chain of thought via prompting can enable sufficiently large language models to better perform reasoning tasks that otherwise have flat scaling curves.
