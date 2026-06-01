@@ -140,3 +140,7 @@ verified end-to-end on the same code you have here.
 
 If your `uv run python flow.py "hello"` produces a final answer, the
 build runs cleanly on your machine. The next step is ASSIGNMENT.md.
+
+
+## Youtube link:
+https://youtu.be/lwlYoyb3NwE
