@@ -144,3 +144,159 @@ build runs cleanly on your machine. The next step is ASSIGNMENT.md.
 
 ## Youtube link:
 https://youtu.be/lwlYoyb3NwE
+
+## Traces:
+srinivasmukka@Srinivass-Mac-mini code % uv run python flow.py "Read /nonexistent/path.txt and tell me what's in it." 
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-1626bd1f  ─  query: Read /nonexistent/path.txt and tell me what's in it.
+══════════════════════════════════════════════════════════════════════════════
+[memory.read] 8 hit(s) visible to every skill this run
+[n:1] planner            complete (15.9s)
+[06/01/26 08:12:30] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 08:12:33] INFO     Processing request of type ListToolsRequest                               server.py:727
+[06/01/26 08:12:54] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 08:13:14] INFO     Processing request of type CallToolRequest                                server.py:727
+[n:2] researcher         complete (98.2s)
+[n:3] formatter          complete (8.4s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: I'm sorry, but the file /nonexistent/path.txt does not exist.
+══════════════════════════════════════════════════════════════════════════════
+
+srinivasmukka@Srinivass-Mac-mini code % clear
+srinivasmukka@Srinivass-Mac-mini code % uv run python flow.py "hello"
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-932436a8  ─  query: hello
+══════════════════════════════════════════════════════════════════════════════
+[memory.read] 8 hit(s) visible to every skill this run
+[n:1] planner            complete (16.8s)
+[n:2] formatter          complete (4.4s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: Hello! It seems like you've just said hello.
+══════════════════════════════════════════════════════════════════════════════
+
+srinivasmukka@Srinivass-Mac-mini code % uv run python flow.py "Fetch https://en.wikipedia.org/wiki/Claude_Shannon and tell me his birth date, death date, and three key contributions to information theory."
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-400450ff  ─  query: Fetch https://en.wikipedia.org/wiki/Claude_Shannon and tell me his birth date, death date, and three key contributions to information theory.
+══════════════════════════════════════════════════════════════════════════════
+[memory.read] 8 hit(s) visible to every skill this run
+[n:1] planner            complete (18.5s)
+[n:2] researcher         complete (25.3s)
+[n:3] distiller          complete (10.5s)
+[n:4] formatter          complete (9.5s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: Claude Shannon was born on April 30, 1916, and he died on February 24, 2001. Three key contributions he made to information theory are: 
+1. Mathematical Theory of Communication
+2. Invention of Shannon's Information Theory
+3. Concept of bit and binary digit.
+══════════════════════════════════════════════════════════════════════════════
+
+srinivasmukka@Srinivass-Mac-mini code % uv run python flow.py "Read /nonexistent/path.txt and tell me what's in it." 
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-efd5bc6c  ─  query: Read /nonexistent/path.txt and tell me what's in it.
+══════════════════════════════════════════════════════════════════════════════
+[memory.read] 8 hit(s) visible to every skill this run
+[n:1] planner            complete (16.2s)
+[06/01/26 10:12:12] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:12:14] INFO     Processing request of type ListToolsRequest                               server.py:727
+[06/01/26 10:12:33] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:12:53] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:13:07] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:13:20] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:13:43] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:14:05] INFO     Processing request of type CallToolRequest                                server.py:727
+[n:2] researcher         complete (127.1s)
+[n:3] formatter          complete (5.6s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: I'm sorry, but the file /nonexistent/path.txt does not exist.
+══════════════════════════════════════════════════════════════════════════════
+
+srinivasmukka@Srinivass-Mac-mini code % uv run python flow.py "Research the current population of New York, Tokyo, and London and tell me which city has the highest population."
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-e72b2b8f  ─  query: Research the current population of New York, Tokyo, and London and tell me which city has the highest population.
+══════════════════════════════════════════════════════════════════════════════
+[memory.read] 8 hit(s) visible to every skill this run
+[n:1] planner            complete (25.2s)
+[06/01/26 10:16:32] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:16:33] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:16:35] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:16:36] INFO     Processing request of type ListToolsRequest                               server.py:727
+[06/01/26 10:16:38] INFO     Processing request of type ListToolsRequest                               server.py:727
+[06/01/26 10:16:39] INFO     Processing request of type ListToolsRequest                               server.py:727
+[06/01/26 10:17:03] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:17:33] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:17:47] INFO     Processing request of type CallToolRequest                                server.py:727
+[n:2] researcher         complete (102.4s)
+[n:3] researcher         complete (54.3s)
+[n:4] researcher         complete (19.2s)
+[n:5] distiller          complete (15.6s)
+[n:6] distiller          complete (20.9s)
+[n:7] distiller          complete (10.2s)
+[n:8] coder              complete (33.0s)
+[n:9] formatter          complete (5.7s)
+[n:10] sandbox_executor   failed   (0.0s)  err=no code in upstream coder output
+  ↪ recovery (upstream_failure): planner node n:11 queued for n:10
+[n:11] planner            complete (21.5s)
+[06/01/26 10:19:36] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:19:37] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:19:40] INFO     Processing request of type ListToolsRequest                               server.py:727
+[06/01/26 10:19:41] INFO     Processing request of type ListToolsRequest                               server.py:727
+[skills] researcher: 3 malformed NodeSpec(s) emitted.
+  - successor={'url': 'https://www.google.com/search?q=current+population+of+tokyo', 'title': ''}  error=1 validation error for NodeSpec
+skill
+  Field required [type=missing, input_value={'url': 'https://www.goog...+of+tokyo', 'title': ''}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+  - successor={'url': 'https://www.google.com/search?q=current+population+of+new+york', 'title': ''}  error=1 validation error for NodeSpec
+skill
+  Field required [type=missing, input_value={'url': 'https://www.goog...+new+york', 'title': ''}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+  - successor={'url': 'https://www.google.com/search?q=current+population+of+london', 'title': ''}  error=1 validation error for NodeSpec
+skill
+  Field required [type=missing, input_value={'url': 'https://www.goog...of+london', 'title': ''}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+
+
+[06/01/26 10:20:36] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:21:00] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:21:09] INFO     Processing request of type CallToolRequest                                server.py:727
+
+[06/01/26 10:21:23] INFO     Processing request of type CallToolRequest                                server.py:727
+
+[06/01/26 10:21:46] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:22:08] INFO     Processing request of type CallToolRequest                                server.py:727
+[n:12] researcher         complete (164.1s)
+[n:13] researcher         failed   (28.6s)  err=researcher: 3 malformed NodeSpec(s) emitted.
+  - successor={'url': 'https://www.
+  ↪ n:13 failed (validation_error, skill=researcher): validation error (malformed NodeSpec); fix the prompt, not the run
+[n:14] researcher         complete (49.5s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: The city with the highest current population among New York, Tokyo, and London is Tokyo.
+══════════════════════════════════════════════════════════════════════════════
+
+srinivasmukka@Srinivass-Mac-mini code % uv run python flow.py "Write a haiku about climate change. The haiku must have exactly 5 syllables in line 1, 7 in line 2, and 5 in line 3."
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-2c59a24b  ─  query: Write a haiku about climate change. The haiku must have exactly 5 syllables in line 1, 7 in line 2, and 5 in line 3.
+══════════════════════════════════════════════════════════════════════════════
+[memory.read] 8 hit(s) visible to every skill this run
+[n:1] planner            complete (17.5s)
+[06/01/26 10:23:46] INFO     Processing request of type CallToolRequest                                server.py:727
+[06/01/26 10:23:48] INFO     Processing request of type ListToolsRequest                               server.py:727
+[n:2] researcher         complete (35.7s)
+[n:3] distiller          complete (8.3s)
+[n:4] formatter          complete (6.0s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: Earth warms, ice melts fast
+Rising seas, storms take hold
+Climate change, we must act
+══════════════════════════════════════════════════════════════════════════════
