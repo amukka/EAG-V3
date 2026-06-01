@@ -1,7 +1,7 @@
 # Secrets — NEVER commit
 .env
 .env.local
-.env.example
+# .env.example is a committed template (placeholder values only — no real keys)
 
 # Local runtime state — regenerated on each run
 code/state/sessions/*/
