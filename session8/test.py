@@ -1,0 +1,7 @@
+#uv run python flow.py "Given populations: New York (8M), Tokyo (13.9M) — compute the average."
+#uv run python flow.py "hello"
+#uv run python flow.py "Write a haiku about climate change. The haiku must have exactly 5 syllables in line 1, 7 in line 2, and 5 in line 3."
+#uv run python flow.py "Research the current population of New York, Tokyo, and London and tell me which city has the highest population."
+# uv run python flow.py "Find the founding year, current age, and net worth of Elon Musk, Bill Gates, and Steve Ballmer. Which one was youngest when their company was founded?"
+#uv run python flow.py "Read /nonexistent/path.txt and tell me what's in it."
+# uv run python flow.py "Fetch https://en.wikipedia.org/wiki/Claude_Shannon and tell me his birth date, death date, and three key contributions to information theory."
