@@ -1,6 +1,7 @@
 # Secrets — NEVER commit
 .env
 .env.local
+.env.example
 
 # Local runtime state — regenerated on each run
 code/state/sessions/*/
