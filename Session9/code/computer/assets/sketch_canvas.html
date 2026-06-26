@@ -1,0 +1,73 @@
+<!doctype html>
+<!--
+  Session 10 vision-task target: a canvas-only "sketch" surface.
+
+  Everything visible is painted onto a single <canvas> — the three colour
+  swatches and the drawing area are pixels, not DOM/AX elements. Opened in
+  Chrome app mode (--app=file://...) the window has almost no accessibility
+  tree, so the Computer-Use cascade's a11y layer finds nothing to act on and
+  must escalate to Layer 3 vision. The vision model locates the red swatch by
+  colour and returns a click coordinate. This is the desktop analogue of the
+  Session 9 canvas-only.html demo.
+
+  Goal used by the task: "Click the red colour swatch on the left palette."
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sketch</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b2b2b; overflow: hidden; }
+  #pad { display: block; }
+  #status { position: fixed; bottom: 8px; left: 12px; color: #ddd;
+            font: 14px -apple-system, sans-serif; }
+</style>
+</head>
+<body>
+<canvas id="pad" width="900" height="600"></canvas>
+<div id="status">no swatch selected</div>
+<script>
+  const c = document.getElementById('pad');
+  const g = c.getContext('2d');
+
+  // Palette swatches drawn as canvas pixels (no DOM nodes → no AX nodes).
+  const swatches = [
+    { name: 'red',   color: '#e23b3b', x: 40,  y: 60  },
+    { name: 'green', color: '#3bbf52', x: 40,  y: 160 },
+    { name: 'blue',  color: '#3b6fe2', x: 40,  y: 260 },
+  ];
+  const SW = 60;  // swatch size
+
+  function draw() {
+    g.fillStyle = '#1e1e1e';
+    g.fillRect(0, 0, c.width, c.height);
+    // palette column
+    g.fillStyle = '#333';
+    g.fillRect(20, 30, 100, 540);
+    for (const s of swatches) {
+      g.fillStyle = s.color;
+      g.fillRect(s.x, s.y, SW, SW);
+    }
+    // canvas drawing area label
+    g.fillStyle = '#3a3a3a';
+    g.fillRect(160, 30, 700, 540);
+  }
+  draw();
+
+  // Clicking a swatch updates the status line — this is what the task's
+  // verify step (or a human watching the demo) confirms.
+  c.addEventListener('click', (e) => {
+    const r = c.getBoundingClientRect();
+    const x = e.clientX - r.left, y = e.clientY - r.top;
+    for (const s of swatches) {
+      if (x >= s.x && x <= s.x + SW && y >= s.y && y <= s.y + SW) {
+        document.getElementById('status').textContent =
+          'selected: ' + s.name;
+        document.title = 'Sketch — ' + s.name;
+        return;
+      }
+    }
+  });
+</script>
+</body>
+</html>
