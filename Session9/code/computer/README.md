@@ -198,3 +198,6 @@ wrong-behaviour bug of the Session 7/9 shape — fixed and captured here:
 - [x] Every run recorded with `start_recording`
 - [ ] GitHub repo README (this file) + YouTube demo with agent-cursor overlay
 - [ ] Run live on a machine with cua-driver installed + TCC granted
+
+## Youtube Video
+https://youtu.be/IzStqE_l0i0
